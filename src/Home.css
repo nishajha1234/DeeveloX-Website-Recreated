@@ -1,0 +1,200 @@
+/* General Styles */
+body {
+  overflow-x: hidden;
+}
+
+.home {
+  position: relative;
+  text-align: left;
+  padding: 0;
+}
+
+.full-screen-image {
+  position: relative;
+  height: 90vh;
+  background-image: url("./assets/3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header-content {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-90%);
+  width: 100%;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin-top: 10px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+
+.hero-button:hover {
+  background-color: #45a049;
+}
+
+/* Services Section */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 4rem 2rem;
+  background-image: linear-gradient(108.7deg, rgba(221,22,224,1) 11%, rgba(111,22,190,1) 88.2%);
+}
+
+.service-card {
+  background: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  width: 300px;
+  display: flex;
+  height: min-content;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 1px solid #ccc; 
+}
+
+.service-card .service-content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.service-card h2 {
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.service-card .service-button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.service-card .service-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem auto; /* Center the card and ensure equal margin on both sides */
+  }
+}
+
+/* Process Section */
+.process {
+  position: relative;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8%);
+  color: white;
+  padding: 4rem 2rem;
+}
+
+.process h2 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 50px;
+}
+
+.process-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+  flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+}
+
+.process-step {
+  text-align: center;
+  flex-basis: 22%; /* Ensure even distribution */
+  margin: 10px; /* Added margin for better spacing */
+}
+
+.process-step h3 {
+  font-size: 20px;
+}
+
+.process-step img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+/* Service Card Adjustments */
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem auto; /* Center the card and ensure equal margin on both sides */
+  }
+
+  .process-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .process-step {
+    width: 100%;
+    max-width: 400px;
+  }
+}

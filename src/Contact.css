@@ -1,0 +1,119 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff; /* White background */
+  color: #333; /* Dark text color */
+  margin: 0;
+}
+
+main {
+  max-width: 1200px;
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f0f0f0; /* Light gray background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.contact-info, .company-info {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-info h1 {
+  font-size: 3rem;
+  margin-bottom: 8px;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+}
+
+.contact-form form {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  gap: 20px;
+}
+
+.contact-form form label {
+  margin-bottom: 5px;
+  font-size: 1.4rem;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px;
+  background: #fff; /* White background */
+  color: #333; /* Dark text color */
+  transition: border-color 0.3s, box-shadow 0.3s;
+  width: 95%;
+}
+
+.contact-form form .phone-input {
+  display: flex;
+  align-items: center;
+  width: 95%;
+}
+
+.contact-form form .phone-input span {
+  padding: 10px;
+  background: #ccc; /* Light gray background */
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.contact-form form .phone-input input {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.contact-form form textarea {
+  height: 120px;
+}
+
+.contact-form form input:focus,
+.contact-form form textarea:focus {
+  outline: none;
+  border-color: #f39c12; /* Highlight color */
+  box-shadow: 0 0 8px rgba(243, 156, 18, 0.4); /* Light shadow on focus */
+}
+
+.contact-form form button {
+  grid-column: span 2;
+  margin-top: 20px; /* Space between button and company info */
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  background: rgb(45, 137, 243); 
+  border: none;
+  border-radius: 5px;
+  color: #fff; 
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 97%;
+}
+
+.contact-form form button:hover {
+  background: rgb(20, 96, 238); 
+}
+
+.company-info p {
+  margin: 10px 0; /* Adjusted margin for better spacing */
+}
+
+@media (max-width: 768px) {
+  .contact-form form {
+  grid-template-columns: 3fr 7fr;
+}
+}

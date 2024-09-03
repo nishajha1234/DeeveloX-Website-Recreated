@@ -1,0 +1,40 @@
+.footer {
+    text-align: center;
+    padding: 5rem;
+    background-color: #333;
+    color: white;
+    bottom: 0;
+  }
+.footer p{
+  padding-bottom: 50px;
+}
+  .paragraph{
+    font-size: 2rem;
+    font-weight: bolder;
+    padding-bottom: 20px;
+  }
+   
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text color */
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+  }
+  
+  .button:active {
+    transform: translateY(1px); /* Push button down slightly when clicked */
+  }
+  
+  
